@@ -5,13 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BidBoxx — Save. Borrow. Grow. Together.</title>
 <meta name="description" content="BidBoxx is the digital susu box built for women — save daily, unlock fair loans, and grow wealth together with a trusted community.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://0boy1122.github.io/bidboxx-website/">
+<meta name="theme-color" content="#7A1B28">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BidBoxx">
+<meta property="og:title" content="BidBoxx — Save. Borrow. Grow. Together.">
+<meta property="og:description" content="The digital susu box built for women — save daily, unlock fair loans, and grow wealth together with a trusted community.">
+<meta property="og:url" content="https://0boy1122.github.io/bidboxx-website/">
+<meta property="og:image" content="https://0boy1122.github.io/bidboxx-website/images/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BidBoxx — Save. Borrow. Grow. Together.">
+<meta name="twitter:description" content="The digital susu box built for women — save daily, unlock fair loans, and grow wealth together with a trusted community.">
+<meta name="twitter:image" content="https://0boy1122.github.io/bidboxx-website/images/logo.png">
+
 <link rel="icon" href="images/logo-mark.png">
+<link rel="apple-touch-icon" href="images/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <header class="site-header" id="siteHeader">
   <div class="container nav">
@@ -26,11 +43,24 @@
       <a href="#security">Security</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a href="#cta" class="btn btn-primary nav-cta">Get the app</a>
+    <div class="nav-right">
+      <a href="#cta" class="btn btn-primary nav-cta">Get the app</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#groups">Groups</a>
+    <a href="#security">Security</a>
+    <a href="#faq">FAQ</a>
+    <a href="#cta" class="btn btn-primary">Get the app</a>
+  </nav>
 </header>
 
-<main>
+<main id="main-content">
   <section class="hero">
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="container hero-grid">
@@ -56,14 +86,16 @@
         </div>
       </div>
       <div class="hero-media reveal">
-        <img class="hero-photo" src="images/woman-login.jpg" alt="A BidBoxx member">
+        <div class="hero-photo-frame">
+          <img class="hero-photo" src="images/woman-login.jpg" alt="A smiling BidBoxx member standing confidently in an office" fetchpriority="high">
+        </div>
 
         <div class="dashboard-card">
           <div class="dash-top">
             <span>Total balance</span>
             <div class="dash-dots"><i></i><i></i><i></i></div>
           </div>
-          <div class="dash-balance">₵12,480.50</div>
+          <div class="dash-balance" id="dashBalance" data-target="12480.50">₵0.00</div>
           <div class="dash-sub">
             <span class="dash-up">▲ 8.2%</span> this month
           </div>
@@ -71,8 +103,8 @@
           <div class="dash-ring-row">
             <svg class="dash-ring" width="64" height="64" viewBox="0 0 64 64">
               <circle cx="32" cy="32" r="27" stroke="rgba(255,255,255,0.12)" stroke-width="7" fill="none"/>
-              <circle cx="32" cy="32" r="27" stroke="#FF3B5C" stroke-width="7" fill="none"
-                stroke-dasharray="169.6" stroke-dashoffset="42" stroke-linecap="round"
+              <circle class="dash-ring-progress" cx="32" cy="32" r="27" stroke="#FF3B5C" stroke-width="7" fill="none"
+                stroke-dasharray="169.6" stroke-dashoffset="169.6" stroke-linecap="round"
                 transform="rotate(-90 32 32)"/>
             </svg>
             <div class="dash-ring-copy">
@@ -120,7 +152,7 @@
 
       <div class="feature-cards">
         <div class="feature-card reveal">
-          <img src="images/woman-save.jpg" alt="Saving with BidBoxx">
+          <img src="images/woman-save.jpg" alt="A BidBoxx member reviewing her daily savings progress" loading="lazy" decoding="async">
           <div class="feature-card-body">
             <div class="feature-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1116 0 8 8 0 01-16 0z" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -130,7 +162,7 @@
           </div>
         </div>
         <div class="feature-card reveal">
-          <img src="images/woman-loan.jpg" alt="BidBoxx loans">
+          <img src="images/woman-loan.jpg" alt="A BidBoxx member who has unlocked a loan through the app" loading="lazy" decoding="async">
           <div class="feature-card-body">
             <div class="feature-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-8 4 16 3-8h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -140,7 +172,7 @@
           </div>
         </div>
         <div class="feature-card reveal">
-          <img src="images/woman-grow.jpg" alt="Growing with BidBoxx">
+          <img src="images/woman-grow.jpg" alt="A BidBoxx member enjoying the results of her savings growth" loading="lazy" decoding="async">
           <div class="feature-card-body">
             <div class="feature-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c.6-3 2.7-5 5.5-5s4.9 2 5.5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14.5 14.2c2.2.3 3.9 2 4.4 4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -156,7 +188,7 @@
   <section class="how" id="how">
     <div class="container how-grid">
       <div class="how-media reveal">
-        <img src="images/woman-grow.jpg" alt="BidBoxx member on a rooftop">
+        <img src="images/woman-grow.jpg" alt="A BidBoxx member on a rooftop at dusk" loading="lazy" decoding="async">
       </div>
       <div class="how-copy reveal">
         <span class="eyebrow">Getting started</span>
@@ -209,7 +241,7 @@
         <a href="#cta" class="btn btn-primary">Start a group box</a>
       </div>
       <div class="groups-media reveal">
-        <img src="images/woman-loan.jpg" alt="Women banking together">
+        <img src="images/woman-loan.jpg" alt="Two women reviewing their group savings box together" loading="lazy" decoding="async">
       </div>
     </div>
   </section>

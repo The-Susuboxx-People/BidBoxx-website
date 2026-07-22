@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://0boy1122.github.io/bidboxx-website/sitemap.xml
