@@ -682,7 +682,7 @@ section h2 {
   box-shadow: 0 8px 18px -6px var(--maroon-glow);
 }
 
-.steps h4 {
+.steps h3 {
   margin: 4px 0 6px;
   font-size: 1.08rem;
   font-weight: 700;
@@ -895,7 +895,7 @@ section h2 {
   flex-shrink: 0;
 }
 
-.security-item h4 {
+.security-item h3 {
   color: #fff;
   margin: 0 0 6px;
   font-size: 1rem;
