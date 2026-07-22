@@ -394,14 +394,11 @@ h1, h2, h3, h4, h5 {
 
 .hero-media {
   position: relative;
-  aspect-ratio: 4/5;
-  padding: 0 0 64px;
 }
 
 .hero-photo-frame {
-  position: absolute;
-  inset: 0;
-  bottom: 64px;
+  position: relative;
+  aspect-ratio: 4/5;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 10px 20px -10px rgba(28,16,19,0.15), 0 40px 70px -25px rgba(122, 27, 40, 0.4);
@@ -417,10 +414,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .dashboard-card {
-  position: absolute;
-  left: 24px;
-  right: 24px;
-  bottom: 0;
+  position: relative;
+  z-index: 2;
+  margin: -72px 24px 0;
   background: linear-gradient(160deg, #26141c, #120a0e);
   border: 1px solid rgba(255,255,255,0.09);
   border-radius: 22px;
@@ -1142,6 +1138,6 @@ section h2 {
   .security-list { grid-template-columns: 1fr; }
   .hero-stats { gap: 20px; }
   .trust-row { gap: 24px 32px; }
-  .dashboard-card { left: 16px; right: 16px; padding: 20px; }
+  .dashboard-card { margin: -56px 12px 0; padding: 20px; }
   .footer-top { grid-template-columns: 1fr; }
 }
