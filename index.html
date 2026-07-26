@@ -9,7 +9,7 @@
 <meta name="author" content="BidBoxx">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://0boy1122.github.io/bidboxx-website/">
-<meta name="theme-color" content="#7A1B28">
+<meta name="theme-color" content="#700B13">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_GH">
@@ -18,8 +18,8 @@
 <meta property="og:description" content="Save daily, unlock fair loans, and grow wealth together. BidBoxx brings the traditional susu box online for everyone across Ghana.">
 <meta property="og:url" content="https://0boy1122.github.io/bidboxx-website/">
 <meta property="og:image" content="https://0boy1122.github.io/bidboxx-website/images/logo.png">
-<meta property="og:image:width" content="3264">
-<meta property="og:image:height" content="3264">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
 <meta property="og:image:alt" content="BidBoxx logo on a maroon background">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BidBoxx — Susu Savings, Loans &amp; Group Savings for Everyone">
@@ -38,10 +38,23 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "BidBoxx",
+  "legalName": "Bidvest Microfinance Limited",
   "url": "https://0boy1122.github.io/bidboxx-website/",
   "logo": "https://0boy1122.github.io/bidboxx-website/images/logo.png",
-  "description": "BidBoxx is the digital susu box for everyone — save daily, unlock fair loans, and grow wealth together with a trusted savings community.",
-  "slogan": "Save small. Borrow smart. Grow together."
+  "description": "BidBoxx is the digital susu box for everyone — save daily, unlock fair loans, and grow wealth together with a trusted savings community. Built by Bidvest Microfinance Limited.",
+  "slogan": "Save small. Borrow smart. Grow together.",
+  "foundingDate": "2013-03-07",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tesano, Accra",
+    "addressCountry": "GH"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+233-505-078-246",
+    "email": "info@bidboxx.app",
+    "contactType": "customer service"
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -54,23 +67,23 @@
       "name": "Is BidBoxx safe to use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Every member is KYC-verified and your funds are held with licensed partner institutions."
+        "text": "Yes. Every member is KYC-verified and your funds are held in your own instant account with Bidvest Microfinance Limited, a licensed microfinance institution."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I qualify for a loan?",
+      "name": "How do I qualify for a Pay Small Small loan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Loan eligibility is based on your savings consistency and history within the app — the more you save, the more you can borrow."
+        "text": "Loans go to members with a consistent savings history and no outstanding debt at other institutions. Qualified applicants are verified by a Relationship Manager, then funds are disbursed via Mobile Money over a 180-day term at 20% interest."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I save without joining a group?",
+      "name": "Can I save without joining a JointBoxx?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely. Personal savings boxes work on their own — groups are optional for when you want to save with others."
+        "text": "Absolutely. Save Small Small works on its own — JointBoxx is optional for when you want to save with a partner, group, or institution."
       }
     },
     {
@@ -79,6 +92,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Creating an account and starting a savings box is completely free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I withdraw early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can withdraw anytime, but withdrawing before your savings goal date carries a 10% early withdrawal fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does JointBoxx work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create a JointBoxx group to get a JBoxx Code, invite your partner, group, or institution to subscribe and contribute daily, and your admin withdraws once the target is reached."
       }
     }
   ]
@@ -91,13 +120,12 @@
 <header class="site-header" id="siteHeader">
   <div class="container nav">
     <a href="#" class="brand">
-      <img src="images/logo-mark.png" alt="BidBoxx" class="brand-mark">
-      <span>BidBoxx</span>
+      <img src="images/logotype-light.png" alt="BidBoxx" class="brand-logotype">
     </a>
     <nav class="nav-links">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
-      <a href="#groups">Groups</a>
+      <a href="#jointboxx">JointBoxx</a>
       <a href="#security">Security</a>
       <a href="#faq">FAQ</a>
     </nav>
@@ -111,7 +139,7 @@
   <nav class="mobile-nav" id="mobileNav">
     <a href="#features">Features</a>
     <a href="#how">How it works</a>
-    <a href="#groups">Groups</a>
+    <a href="#jointboxx">JointBoxx</a>
     <a href="#security">Security</a>
     <a href="#faq">FAQ</a>
     <a href="#cta" class="btn btn-primary">Get the app</a>
@@ -161,7 +189,7 @@
           <div class="dash-ring-row">
             <svg class="dash-ring" width="64" height="64" viewBox="0 0 64 64">
               <circle cx="32" cy="32" r="27" stroke="rgba(255,255,255,0.12)" stroke-width="7" fill="none"/>
-              <circle class="dash-ring-progress" cx="32" cy="32" r="27" stroke="#FF3B5C" stroke-width="7" fill="none"
+              <circle class="dash-ring-progress" cx="32" cy="32" r="27" stroke="#F59C28" stroke-width="7" fill="none"
                 stroke-dasharray="169.6" stroke-dashoffset="169.6" stroke-linecap="round"
                 transform="rotate(-90 32 32)"/>
             </svg>
@@ -174,7 +202,7 @@
           <div class="dash-actions">
             <div class="dash-action"><span class="dash-icon">＋</span>Save</div>
             <div class="dash-action"><span class="dash-icon">↗</span>Borrow</div>
-            <div class="dash-action"><span class="dash-icon">◎</span>Groups</div>
+            <div class="dash-action"><span class="dash-icon">◎</span>JointBoxx</div>
           </div>
         </div>
       </div>
@@ -206,7 +234,7 @@
     <div class="container">
       <span class="eyebrow center reveal">What you get</span>
       <h2 class="reveal">Everything you need to build financial freedom</h2>
-      <p class="section-sub reveal">One app for daily savings, group savings, and loans built around how people actually earn and spend.</p>
+      <p class="section-sub reveal">One app for Save Small Small, Pay Small Small, and JointBoxx — built around how people actually earn and spend.</p>
 
       <div class="feature-cards">
         <div class="feature-card reveal">
@@ -215,8 +243,8 @@
             <div class="feature-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1116 0 8 8 0 01-16 0z" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
             </div>
-            <h3>Daily Savings Tracker</h3>
-            <p>Set a savings goal and track it day by day. Small, consistent deposits that add up fast — no bank visits required.</p>
+            <h3>Save Small Small</h3>
+            <p>Commit small amounts daily into your digital piggybank and watch your target come into reach — no bank visits required.</p>
           </div>
         </div>
         <div class="feature-card reveal">
@@ -225,18 +253,18 @@
             <div class="feature-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-8 4 16 3-8h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3>Fair, Fast Loans</h3>
-            <p>Unlock loans based on your savings history — clear terms, transparent rates, and no hidden fees.</p>
+            <h3>Pay Small Small</h3>
+            <p>Consistent savers can unlock low-interest loans — 20% over a flexible 180-day term, repaid in small, manageable deductions.</p>
           </div>
         </div>
         <div class="feature-card reveal">
-          <img src="images/friends-group-savings.jpg" alt="A group of friends growing their savings together on BidBoxx" loading="lazy" decoding="async">
+          <img src="images/friends-group-savings.jpg" alt="A group of friends growing their JointBoxx savings together" loading="lazy" decoding="async">
           <div class="feature-card-body">
             <div class="feature-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c.6-3 2.7-5 5.5-5s4.9 2 5.5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14.5 14.2c2.2.3 3.9 2 4.4 4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
             </div>
-            <h3>Grow With Your Circle</h3>
-            <p>Join savings groups with people you trust. Track shared goals and celebrate every milestone together.</p>
+            <h3>JointBoxx</h3>
+            <p>Crowd-fund shared goals with a partner, group, or institution — share a JBoxx Code and grow one account together.</p>
           </div>
         </div>
       </div>
@@ -256,28 +284,28 @@
             <span class="step-num">1</span>
             <div>
               <h3>Create your box</h3>
-              <p>Sign up in minutes, verify your ID, and set your first savings goal.</p>
+              <p>Register, verify your number, and link your Mobile Money wallet in minutes.</p>
             </div>
           </li>
           <li>
             <span class="step-num">2</span>
             <div>
               <h3>Save on your terms</h3>
-              <p>Top up daily, weekly, or whenever you can — mobile money makes it instant.</p>
+              <p>Set your goal amount, frequency, and duration — auto-debit or manual deposits do the rest.</p>
             </div>
           </li>
           <li>
             <span class="step-num">3</span>
             <div>
-              <h3>Unlock loans &amp; groups</h3>
-              <p>Build a savings history to access loans, or team up with group savings.</p>
+              <h3>Unlock loans &amp; JointBoxx</h3>
+              <p>Build a savings history to access Pay Small Small loans, or team up with JointBoxx.</p>
             </div>
           </li>
           <li>
             <span class="step-num">4</span>
             <div>
               <h3>Watch it grow</h3>
-              <p>Track your progress, hit your goals, and build real financial confidence.</p>
+              <p>Track your progress in real time, right through to your goal. Withdrawing early carries a 10% fee, so it pays to stay the course.</p>
             </div>
           </li>
         </ol>
@@ -285,21 +313,21 @@
     </div>
   </section>
 
-  <section class="groups" id="groups">
+  <section class="groups" id="jointboxx">
     <div class="container groups-grid">
       <div class="groups-copy reveal">
         <span class="eyebrow">Community first</span>
-        <h2>Built for people who show up for each other</h2>
-        <p>Whether it's a market association, a church group, or your closest friends — BidBoxx brings the traditional susu box online, with the trust and transparency of digital tracking.</p>
+        <h2>Raise funds together with JointBoxx</h2>
+        <p>Whether it's a couple, a women's group, or an institution — JointBoxx lets you crowd-fund shared goals with daily joint contributions into one account, all with the trust and transparency of digital tracking.</p>
         <ul class="check-list">
-          <li>Create or join group savings</li>
-          <li>See contributions and payouts in real time</li>
-          <li>Get reminders so no one misses a turn</li>
+          <li>Create a JointBoxx group and share your JBoxx Code</li>
+          <li>Members subscribe and contribute daily, tracked in real time</li>
+          <li>Your admin oversees contributions and withdraws once the target is reached</li>
         </ul>
-        <a href="#cta" class="btn btn-primary">Start group savings</a>
+        <a href="#cta" class="btn btn-primary">Start a JointBoxx</a>
       </div>
       <div class="groups-media reveal">
-        <img src="images/member-market-savings.jpg" alt="Market traders reviewing their group savings together on BidBoxx" loading="lazy" decoding="async">
+        <img src="images/member-market-savings.jpg" alt="Market traders growing their JointBoxx savings together" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -353,7 +381,7 @@
       <div class="security-copy reveal">
         <span class="eyebrow eyebrow-light">Your money, protected</span>
         <h2>Bank-level security, built for trust</h2>
-        <p>Every BidBoxx member is verified, every transaction is encrypted, and your savings are held with licensed, regulated financial partners — not with us.</p>
+        <p>Every BidBoxx member is verified, every transaction is encrypted, and your savings are held in your own instant account with Bidvest Microfinance Limited — the licensed institution behind BidBoxx.</p>
         <a href="#faq" class="btn btn-outline-light">Read our security FAQ</a>
       </div>
       <div class="security-list">
@@ -380,8 +408,8 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 5v6c0 5.25 3.4 9.74 8 11 4.6-1.26 8-5.75 8-11V5l-8-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
           </div>
           <div>
-            <h3>Licensed partners</h3>
-            <p>Funds are safeguarded with regulated banking partners, not held by BidBoxx.</p>
+            <h3>Licensed institution</h3>
+            <p>Funds are safeguarded with Bidvest Microfinance Limited, the licensed institution behind BidBoxx.</p>
           </div>
         </div>
         <div class="security-item reveal">
@@ -424,19 +452,27 @@
       <div class="faq-list reveal">
         <details open>
           <summary>Is BidBoxx safe to use?<span class="chev">+</span></summary>
-          <p>Yes. Every member is KYC-verified and your funds are held with licensed partner institutions.</p>
+          <p>Yes. Every member is KYC-verified and your funds are held in your own instant account with Bidvest Microfinance Limited, a licensed microfinance institution.</p>
         </details>
         <details>
-          <summary>How do I qualify for a loan?<span class="chev">+</span></summary>
-          <p>Loan eligibility is based on your savings consistency and history within the app — the more you save, the more you can borrow.</p>
+          <summary>How do I qualify for a Pay Small Small loan?<span class="chev">+</span></summary>
+          <p>Loans go to members with a consistent savings history and no outstanding debt at other institutions. Qualified applicants are verified by a Relationship Manager, then funds are disbursed via Mobile Money over a 180-day term at 20% interest.</p>
         </details>
         <details>
-          <summary>Can I save without joining a group?<span class="chev">+</span></summary>
-          <p>Absolutely. Personal savings boxes work on their own — groups are optional for when you want to save with others.</p>
+          <summary>Can I save without joining a JointBoxx?<span class="chev">+</span></summary>
+          <p>Absolutely. Save Small Small works on its own — JointBoxx is optional for when you want to save with a partner, group, or institution.</p>
         </details>
         <details>
           <summary>What does it cost to join?<span class="chev">+</span></summary>
           <p>Creating an account and starting a savings box is completely free.</p>
+        </details>
+        <details>
+          <summary>What if I withdraw early?<span class="chev">+</span></summary>
+          <p>You can withdraw anytime, but withdrawing before your savings goal date carries a 10% early withdrawal fee.</p>
+        </details>
+        <details>
+          <summary>How does JointBoxx work?<span class="chev">+</span></summary>
+          <p>Create a JointBoxx group to get a JBoxx Code, invite your partner, group, or institution to subscribe and contribute daily, and your admin withdraws once the target is reached.</p>
         </details>
       </div>
     </div>
@@ -447,10 +483,9 @@
   <div class="container footer-top">
     <div class="footer-brand-col">
       <div class="brand footer-brand">
-        <img src="images/logo-mark.png" alt="BidBoxx">
-        <span>BidBoxx</span>
+        <img src="images/logotype-dark.png" alt="BidBoxx">
       </div>
-      <p class="footer-blurb">The digital susu box helping people across Ghana save daily, borrow fairly, and grow wealth together.</p>
+      <p class="footer-blurb">Save Small Small, Pay Small Small, and JointBoxx — from Bidvest Microfinance Limited, helping people across Ghana save daily and grow wealth together.</p>
       <div class="social-row">
         <a href="#" aria-label="Instagram" class="social-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
@@ -468,7 +503,7 @@
       <h5>Product</h5>
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
-      <a href="#groups">Group savings</a>
+      <a href="#jointboxx">JointBoxx</a>
       <a href="#security">Security</a>
     </div>
     <div class="footer-col">
@@ -476,7 +511,8 @@
       <a href="#">About us</a>
       <a href="#">Careers</a>
       <a href="#">Press</a>
-      <a href="#">Contact</a>
+      <a href="tel:+233505078246">+233 5050 78246</a>
+      <a href="mailto:info@bidboxx.app">info@bidboxx.app</a>
     </div>
     <div class="footer-col">
       <h5>Legal</h5>
@@ -486,7 +522,7 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>&copy; 2026 BidBoxx. All rights reserved.</p>
+    <p>&copy; 2026 BidBoxx, a product of Bidvest Microfinance Limited. All rights reserved.</p>
     <p class="footer-tag">Made with care for everyone building toward more.</p>
   </div>
 </footer>
